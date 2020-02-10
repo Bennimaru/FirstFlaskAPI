@@ -24,16 +24,19 @@ pokemons = [
 
 @app.route('/', methods=['GET'])
 # maps the url and the allowed methods to the specified function
+# home page with a simple message
 def home():
     return "<h1>From Gem Mining to Snake Charming</h1><p>First foray into building something with Python. If Sinatra is to Flask then 'Sinatra doesn't know this ditty' will be...</p>"
 
 
 @app.route('/api/v1/resources/pokemons/all', methods=['GET'])
+# returns all the pokemon available in our hard coded list
 def api_all():
     return jsonify(pokemons)
 
 
 @app.route('/api/v1/resources/pokemons', methods=['GET'])
+# appends an integer as a query parameter to look for a specific pokemon from our list with a matching id
 def api_id():
     if 'id' in request.args:
         id = int(request.args['id'])
