@@ -11,3 +11,7 @@ Third goal: access a specific pokemon via query paramter of id
 Learned that use of virtual environments is considered best practice. Requirements.txt file will need to be created when ready to deploy to other computers.
 
 Fourth goal: set up a basic template
+
+Fifth goal: create a code snippet to extend the basic template
+
+Sixth goal: create multiple templates and routes to finish the VS code Flask tutorial

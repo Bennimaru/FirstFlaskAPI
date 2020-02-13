@@ -26,14 +26,29 @@ pokemons = [
 @app.route('/', methods=['GET'])
 # maps the url and the allowed methods to the specified function
 # home page with a simple message
-def home():
+def hello_world():
     return render_template("aloha_world.html")
+
+
+@app.route('/home', methods=["GET"])
+def home():
+    return render_template('home.html')
+
+
+@app.route('/about', methods=["GET"])
+def about():
+    return render_template('about.html')
+
+
+@app.route('/contact', methods=['GET'])
+def contact():
+    return render_template('contact.html')
 
 
 @app.route('/api/v1/resources/pokemons/all', methods=['GET'])
 # returns all the pokemon available in our hard coded list
 def api_all():
-    return jsonify(pokemons)
+    return app.send_static_file("data.json")
 
 
 @app.route('/api/v1/resources/pokemons', methods=['GET'])

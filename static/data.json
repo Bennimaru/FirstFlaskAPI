@@ -1,0 +1,5 @@
+[
+  { "id": 0, "name": "Bulbasaur", "type": "Grass", "generation": "1" },
+  { "id": 1, "name": "Charmander", "type": "Fire", "generation": "1" },
+  { "id": 2, "name": "Squirtle", "type": "Water", "generation": "1" }
+]

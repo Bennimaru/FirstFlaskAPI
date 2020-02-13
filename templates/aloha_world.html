@@ -3,10 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <title>First Flask API</title>
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='site.css')}}"
+    /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='site.css')}}"
+    />
   </head>
   <body>
     <h1>From Gem Mining to Snake Charming</h1>
-    <p>
+    <p class="message">
       First foray into building something with Python. If Sinatra is to Flask
       then 'Sinatra doesn't know this ditty' will be...
     </p>

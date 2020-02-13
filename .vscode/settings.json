@@ -1,4 +1,12 @@
 {
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.cwd": "",
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.pythonPath": ".venv\\Scripts\\python.exe"
 }
